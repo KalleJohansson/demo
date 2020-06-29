@@ -5,7 +5,7 @@ pipeline {
       agent {
         docker {
           image 'gradle:6.5-jdk11'
-          args '--rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project'
+          args '--rm -u root -v "$PWD":/home/root/project -w /home/root/project'
         }
 
       }
